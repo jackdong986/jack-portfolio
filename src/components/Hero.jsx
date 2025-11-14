@@ -9,6 +9,8 @@ export default function Hero() {
         alt="profile views"
         style={{ marginTop: "1rem" }}
       />
+
+      <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jackdong986" alt="jackdong986" /></a> </p>
     </section>
   );
 }

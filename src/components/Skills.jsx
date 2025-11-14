@@ -1,17 +1,28 @@
 export default function Skills() {
   const icons = [
-    "html5/html5-original.svg",
-    "css3/css3-original.svg",
-    "javascript/javascript-original.svg",
-    "react/react-original.svg",
-    "python/python-original.svg",
-    "java/java-original.svg",
-    "mysql/mysql-original-wordmark.svg",
-    "firebase/firebase-plain.svg",
-    "kotlin/kotlin-original.svg",
-    "c/c-original.svg",
+    "cplusplus/cplusplus-original.svg",
     "csharp/csharp-original.svg",
-    "figma/figma-original.svg"
+    "git/git-original.svg",
+    "java/java-original.svg",
+    "javascript/javascript-original.svg",
+    "kotlin/kotlin-original.svg",
+    "php/php-original.svg",
+    "python/python-original.svg",
+    "visualstudio/visualstudio-plain.svg",
+    "react/react-original.svg",
+    "vite/vite-original.svg",
+    "html5/html5-original.svg",
+    "bootstrap/bootstrap-original.svg",
+    "nodejs/nodejs-original.svg",
+    "mysql/mysql-original.svg",
+    "firebase/firebase-plain.svg",
+    "flask/flask-original.svg",
+    "premierepro/premierepro-original.svg",
+    "photoshop/photoshop-original.svg",
+    "figma/figma-original.svg",
+    "docker/docker-original.svg",
+    "huggingface/huggingface-original.svg",
+    "kubernetes/kubernetes-plain.svg"
   ];
 
   return (

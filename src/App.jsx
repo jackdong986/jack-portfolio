@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { Box } from "@mui/material";
+import Skills from "./components/Skills";
 
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
     <Box>
       <Navbar />
       <Hero />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />

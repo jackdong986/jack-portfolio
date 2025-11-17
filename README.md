@@ -1,16 +1,134 @@
-# React + Vite
+Here is a **clean, minimal, Vite-style README.md**, following exactly the same structure and tone as your example — but rewritten to describe **your portfolio project**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You can directly copy-paste this as your `README.md`:
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# **Jack Dong — Developer Portfolio (React + Vite)**
 
-## React Compiler
+This project is a fully responsive **personal developer portfolio** built using **React**, **Vite**, and **Material-UI (MUI)**.
+It showcases my skills, projects, experience, and includes a dedicated **About Me** page with smooth navigation and modern UI design.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal of this portfolio is to provide a clean, fast, and professional introduction to my work as a software engineer.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Tech Stack Used**
+
+This portfolio uses the following core technologies:
+
+* **React + Vite** for fast development and optimized builds
+* **Material-UI (MUI)** for UI components and theming
+* **React Router** for page navigation (`/about`)
+* **Custom CSS** for background and animations
+* **Vercel** for deployment
+
+---
+
+## **Features**
+
+* ✨ **Modern UI** designed with Material-UI
+* 🧭 **Navbar** with smooth scrolling to page sections
+* 🌐 **Dedicated About Page** (`/about`)
+* 📱 **Fully Responsive** layout for mobile and desktop
+* 📦 **Clean component structure**
+* 🚀 **Optimized for Vercel deployment**
+* ⚙️ **Supports hash navigation (#projects, #contact)**
+
+---
+
+## **Routing Support (Vercel)**
+
+React Router requires rewrite rules on Vercel to avoid **404 Not Found** when refreshing:
+
+Create a `vercel.json` file:
+
+```json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
+
+---
+
+## **Project Structure**
+
+```
+src/
+ ├── components/
+ │   ├── Navbar.jsx
+ │   ├── Hero.jsx
+ │   ├── Skills.jsx
+ │   ├── Projects.jsx
+ │   ├── Contact.jsx
+ │   ├── Footer.jsx
+ │   └── About.jsx
+ │
+ ├── assets/
+ │   └── portfolio-bg.jpg
+ │
+ ├── App.jsx
+ ├── App.css
+ ├── main.jsx
+ ├── theme.js
+ └── index.html
+```
+
+---
+
+## **Running Locally**
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development:
+
+```bash
+npm run dev
+```
+
+Vite will launch the app at:
+
+```
+http://localhost:5173/
+```
+
+---
+
+## **Build for Production**
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## **Deploying on Vercel**
+
+1. Push the project to GitHub
+2. Import into **Vercel Dashboard**
+3. Deploy with default settings
+4. Ensure `vercel.json` exists at the project root
+
+---
+
+## **About the Developer**
+
+**Name:** Jack Dong
+**Role:** Full-Stack Developer
+**Email:** [weijie.dong@flexinfra.com.my](mailto:weijie.dong@flexinfra.com.my)
+**Learning:** AI Stack
+**Location:** Malaysia 🇲🇾
+
+---

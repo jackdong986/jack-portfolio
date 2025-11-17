@@ -1,6 +1,11 @@
 body {
     background-image: url("/src/assets/black.png");
     background-size: cover;
-    background-attachment: fixed; /* stays while scrolling */
+    background-attachment: fixed;
+    /* stays while scrolling */
     background-position: center;
+}
+
+html {
+    scroll-behavior: smooth;
 }

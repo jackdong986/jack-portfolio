@@ -37,6 +37,14 @@ export default function Navbar() {
                     {/* Scroll to sections */}
                     <Button 
                         color="inherit" 
+                        href="#skills"
+                        sx={{ "&:hover": { opacity: 0.8 } }}
+                    >
+                        Skills
+                    </Button>
+
+                    <Button 
+                        color="inherit" 
                         href="#projects"
                         sx={{ "&:hover": { opacity: 0.8 } }}
                     >

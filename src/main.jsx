@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App";
-import About from "./components/About";   // <-- make sure this file exists
+import About from "./components/About";  
 
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -16,11 +16,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
 
-      {/* Router wrapper */}
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Routes>
+          {/* Home */}
           <Route path="/" element={<App />} />
+
+          {/* Standalone About page */}
           <Route path="/about" element={<About />} />
+
+          {/* Fix: Any unknown route → fallback to home */}
+          <Route path="*" element={<App />} />
         </Routes>
       </BrowserRouter>
 

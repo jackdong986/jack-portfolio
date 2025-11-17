@@ -15,7 +15,7 @@ export default function Navbar() {
                 <Box>
                     <Button color="inherit" href="#about">About Us</Button>
                     <Button color="inherit" href="#projects">Projects</Button>
-                    <Button color="inherit" href="#contact">Contact</Button>
+                    <Button color="inherit" href="#contact">Contact & Resume</Button>
                 </Box>
             </Toolbar>
         </AppBar>

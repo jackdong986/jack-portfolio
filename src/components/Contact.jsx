@@ -1,8 +1,9 @@
 import { Box, Typography, Card, CardContent, Button, Stack } from "@mui/material";
 import QRCode from "react-qr-code";
+import resume from "../assets/_CV Resume.pdf"
 
 export default function Contact() {
-    const resumeUrl = "/src/assets/_CV Resume.pdf"; // Put resume.pdf inside /public
+    const resumeUrl = resume; // Put resume.pdf inside /public
     const github = "https://github.com/jackdong986";
 
     return (

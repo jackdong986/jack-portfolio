@@ -12,7 +12,7 @@ export default function App() {
     <Box>
       <Navbar />
       <Hero />
-      <Skills />
+      <Skills/>
       <Projects />
       <Contact />
       <Footer />

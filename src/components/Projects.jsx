@@ -1,17 +1,21 @@
 import { Box, Card, CardContent, CardMedia, Typography, Grid, Link } from "@mui/material";
+import chefImg from "../assets/chef.png";
+import aboutImg from "../assets/about us.png";
 
 export default function Projects() {
     const items = [
         {
             title: "Chef’s Assistant: AI-Driven Recipe Generation",
             desc: "A Chef's Recipe Generator",
-            img: "/src/assets/chef.png",
+            //img: "/src/assets/chef.png",
+            img: chefImg,
             url: "https://github.com/jackdong986/Chef-s-Assistant-AI-Driven-Recipe-Generation-for-Dynamic-Menu-Planning"
         },
         {
             title: "About Me",
             desc: "About Me via vercel",
-            img: "/src/assets/about us.png",
+            //img: "/src/assets/about us.png",
+            img: aboutImg,
             url: "https://github.com/jackdong986/About-Me"
         },
     ];
@@ -22,22 +26,22 @@ export default function Projects() {
                 My Projects (Github)
             </Typography>
 
-            <Grid 
-                container 
+            <Grid
+                container
                 spacing={3}
                 justifyContent="center"
             >
                 {items.map((p, i) => {
                     const CardBody = (
-                        <Card 
-                            sx={{ 
+                        <Card
+                            sx={{
                                 height: "100%",
                                 transition: "0.3s",
                                 "&:hover": { transform: "scale(1.03)" },
                                 cursor: p.url ? "pointer" : "default"
                             }}
                         >
-                            <CardMedia
+                            {/* <CardMedia
                                 component="img"
                                 image={p.img}
                                 sx={{
@@ -45,6 +49,16 @@ export default function Projects() {
                                     height: 220,               // ✔ Consistent image height
                                     objectFit: "cover",        // ✔ No stretching
                                     borderBottom: "1px solid #eee",
+                                }}
+                            /> */}
+
+                            <CardMedia
+                                component="img"
+                                image={p.img}
+                                sx={{
+                                    width: "100%",
+                                    height: 200,
+                                    objectFit: "cover",
                                 }}
                             />
 

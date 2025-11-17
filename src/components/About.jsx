@@ -1,47 +1,34 @@
-import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
-
 export default function About() {
     return (
-        <Box
-            id="about"
-            sx={{
-                padding: "60px 20px",
-                maxWidth: "900px",
-                margin: "auto",
-                lineHeight: 1.8,
-            }}
-        >
-            <Typography variant="h4" fontWeight={700} mb={3} textAlign="center">
-                About Me
-            </Typography>
+        <div style={{
+            padding: "40px",
+            maxWidth: "900px",
+            margin: "auto",
+            lineHeight: "1.7",
+            fontSize: "18px"
+        }}>
+            <h1>About Me</h1>
 
-            <Typography variant="body1" mb={2}>
-                I’m <strong>Dong Wei Jie</strong>, a passionate software engineer from Malaysia,
-                focused on building dynamic web solutions with user-friendly designs
+            <p>
+                I’m Dong Wei Jie, a passionate software engineer from Malaysia,
+                focused on creating dynamic web solutions with user-friendly design
                 and seamless functionality.
-            </Typography>
+            </p>
 
-            <Typography variant="body1" mb={2}>
-                I have experience in full-stack development using technologies such as:
-                Java, Kotlin, JavaScript, Python, HTML, ASPX, CSS, and a basic understanding
-                of 8086 Assembly Language and C++. I also work with Adobe Photoshop and
-                Premiere Pro for multimedia creation.
-            </Typography>
+            <p>
+                I specialize in backend and frontend development, using technologies such as:
+                Java, Kotlin, JavaScript, Python, HTML, ASPX, CSS, with a basic understanding
+                of 8086 Assembly and C++. I also work with Adobe Photoshop and Premiere Pro.
+            </p>
 
-            <List sx={{ mt: 3 }}>
-                <ListItem>
-                    <ListItemText primary="🌍 Based in Malaysia 🇲🇾" />
-                </ListItem>
-                <ListItem>
-                    <ListItemText primary="✉️ Contact: weijie.dong@flexinfra.com.my" />
-                </ListItem>
-                <ListItem>
-                    <ListItemText primary="🧠 Currently learning AI Stack" />
-                </ListItem>
-                <ListItem>
-                    <ListItemText primary="☕ Sleepy but working hard with coffee" />
-                </ListItem>
-            </List>
-        </Box>
+            <p>
+                <ul>
+                    <li>🌍 Based in Malaysia  </li>
+                    <li> ✉️ Contact: weijie.dong@flexinfra.com.my  </li>
+                    <li>🧠 Currently learning AI Stack  </li>
+                    <li>☕ Sleepy but trying my best with coffee</li>
+                </ul>
+            </p>
+        </div>
     );
 }

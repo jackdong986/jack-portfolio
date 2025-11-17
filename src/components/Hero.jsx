@@ -1,16 +1,37 @@
+import { Box, Typography, Button } from "@mui/material";
+
+
 export default function Hero() {
-  return (
-    <section style={{ textAlign: "center", paddingTop: "4rem" }}>
-      <h1>Hi 👋, I'm <span style={{ color: "#58a6ff" }}>Jack Dong</span></h1>
-      <h3>A passionate coding explorer from Malaysia 🇲🇾</h3>
+    return (
+        <Box
+            sx={{
+                height: "80vh",
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "column",
+                justifyContent: "center",
+                textAlign: "center",
+                px: 2,
+            }}
+        >
+            <Typography variant="h2" fontWeight={700} gutterBottom>
+                Hi, I'm Jack Dong
+            </Typography>
 
-      <img
-        src="https://komarev.com/ghpvc/?username=jackdong986&label=Profile%20Views&color=blue&style=flat-square"
-        alt="profile views"
-        style={{ marginTop: "1rem" }}
-      />
 
-      <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jackdong986" alt="jackdong986" /></a> </p>
-    </section>
-  );
+            <Typography variant="h5" color="text.secondary" gutterBottom>
+                Full-Stack Developer • A Versatile Problem-Solver • Technical Generalist
+            </Typography>
+
+
+            <Button
+                variant="contained"
+                size="large"
+                href="#projects"
+                sx={{ mt: 3 }}
+            >
+                View My Projects
+            </Button>
+        </Box>
+    );
 }

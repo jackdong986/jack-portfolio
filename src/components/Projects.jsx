@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, CardMedia, Typography, Grid, Link } from "@mui/material";
 import chefImg from "../assets/chef.png";
 import aboutImg from "../assets/about us.png";
+import flowerImg from "../assets/bloom & co..png";
 
 export default function Projects() {
     const items = [
@@ -17,6 +18,13 @@ export default function Projects() {
             //img: "/src/assets/about us.png",
             img: aboutImg,
             url: "https://github.com/jackdong986/About-Me"
+        },
+        {
+            title: "Bloom & Co.",
+            desc: "Flower Shop",
+            //img: "/src/assets/about us.png",
+            img: flowerImg,
+            url: "https://github.com/jackdong986/website-shop"
         },
     ];
 

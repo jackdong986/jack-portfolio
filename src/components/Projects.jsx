@@ -2,6 +2,7 @@ import { Box, Card, CardContent, CardMedia, Typography, Grid, Link } from "@mui/
 import chefImg from "../assets/chef.png";
 import aboutImg from "../assets/about us.png";
 import flowerImg from "../assets/bloom & co..png";
+import moviedramaImg from "../assets/movie_drama.png";
 
 export default function Projects() {
     const items = [
@@ -25,6 +26,13 @@ export default function Projects() {
             //img: "/src/assets/about us.png",
             img: flowerImg,
             url: "https://github.com/jackdong986/website-shop"
+        },
+        {
+            title: "非凡影视",
+            desc: "A movie website",
+            //img: "/src/assets/about us.png",
+            img: moviedramaImg,
+            url: "https://github.com/jackdong986/online-movie"
         },
     ];
 

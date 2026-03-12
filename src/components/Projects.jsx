@@ -32,7 +32,7 @@ export default function Projects() {
             desc: "A movie website",
             //img: "/src/assets/about us.png",
             img: moviedramaImg,
-            url: "https://github.com/jackdong986/online-movie"
+            url: "https://github.com/jackdong986/ffzy-vercel"
         },
     ];
 

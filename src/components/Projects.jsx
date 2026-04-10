@@ -3,6 +3,7 @@ import chefImg from "../assets/chef.png";
 import aboutImg from "../assets/about us.png";
 import flowerImg from "../assets/bloom & co..png";
 import moviedramaImg from "../assets/movie_drama.png";
+import dashboardImg from "../assets/dashboard.png";
 
 export default function Projects() {
     const items = [
@@ -33,6 +34,13 @@ export default function Projects() {
             //img: "/src/assets/about us.png",
             img: moviedramaImg,
             url: "https://github.com/jackdong986/ffzy-vercel"
+        },
+        {
+            title: "My Dashboard",
+            desc: "Dashboard for personal use",
+            //img: "/src/assets/dashboard.png",
+            img: dashboardImg,
+            url: "https://github.com/jackdong986/my-dashboard"
         },
     ];
 

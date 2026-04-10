@@ -4,6 +4,7 @@ import aboutImg from "../assets/about us.png";
 import flowerImg from "../assets/bloom & co..png";
 import moviedramaImg from "../assets/movie_drama.png";
 import dashboardImg from "../assets/dashboard.png";
+import llamaflexinfraImg from "../assets/llama-flexinfra.png";
 
 export default function Projects() {
     const items = [
@@ -41,6 +42,13 @@ export default function Projects() {
             //img: "/src/assets/dashboard.png",
             img: dashboardImg,
             url: "https://github.com/jackdong986/my-dashboard"
+        },
+        {
+            title: "Llama-FlexInfra",
+            desc: "An AI chatbot about flexinfra",
+            //img: "/src/assets/about us.png",
+            img: llamaflexinfraImg,
+            url: "https://github.com/jackdong986/llama-flexinfra"
         },
     ];
 

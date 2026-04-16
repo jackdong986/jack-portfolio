@@ -38,7 +38,7 @@ export default function About() {
                 </ListItem>
 
                 <ListItem>
-                    <ListItemText primary="✉️ Email: weijie.dong@flexinfra.com.my" />
+                    <ListItemText primary="✉️ Email: jackdong986@gmail.com" />
                 </ListItem>
 
                 <ListItem>

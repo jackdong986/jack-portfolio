@@ -1,11 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
 body {
-    background-image: url("/src/assets/black.png");
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(-45deg, #0d1117, #0b1a37, #130a21, #0f1d24);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     background-attachment: fixed;
-    /* stays while scrolling */
-    background-position: center;
+    color: #e6edf3;
+    overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(13, 17, 23, 0.5); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(79, 139, 255, 0.5); 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(79, 139, 255, 0.8); 
 }

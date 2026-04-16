@@ -9,7 +9,16 @@ export default function Navbar() {
     const navigate = useNavigate();
 
     return (
-        <AppBar position="sticky" color="primary" elevation={4}>
+        <AppBar 
+            position="sticky" 
+            elevation={0}
+            sx={{
+                background: "rgba(13, 17, 23, 0.4)",
+                backdropFilter: "blur(12px)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+                zIndex: (theme) => theme.zIndex.drawer + 1
+            }}
+        >
             <Toolbar
                 sx={{
                     justifyContent: "space-between",

@@ -1,6 +1,6 @@
 import { Box, Typography, Card, CardContent, Button, Stack } from "@mui/material";
 import QRCode from "react-qr-code";
-import resume from "../assets/_CV Resume.pdf"
+import resume from "../assets/CV Resume.pdf"
 
 export default function Contact() {
     const resumeUrl = resume; // Put resume.pdf inside /public

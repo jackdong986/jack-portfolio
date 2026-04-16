@@ -1,7 +1,9 @@
-import { Box, Typography, List, ListItem, ListItemText, Card, CardContent } from "@mui/material";
+import { Box, Typography, List, ListItem, ListItemText, Card, CardContent, Button } from "@mui/material";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+    const navigate = useNavigate();
     return (
         <Box
             sx={{
@@ -28,6 +30,20 @@ export default function About() {
                     }}
                 >
                     <CardContent>
+                        <Button 
+                            onClick={() => navigate("/")}
+                            sx={{ 
+                                mb: 2, 
+                                color: "#a0c4ff",
+                                textTransform: "none",
+                                fontSize: "1rem",
+                                fontWeight: 600,
+                                "&:hover": { background: "rgba(255,255,255,0.05)" }
+                            }}
+                        >
+                            ← Back to Home
+                        </Button>
+
                         <Typography variant="h3" fontWeight={700} mb={4} textAlign="center"
                             sx={{
                                 background: "linear-gradient(90deg, #fff, #a0c4ff)",

@@ -33,12 +33,24 @@ export default function About() {
                         <Button 
                             onClick={() => navigate("/")}
                             sx={{ 
-                                mb: 2, 
-                                color: "#a0c4ff",
+                                mb: 3, 
+                                color: "#fff",
+                                background: "rgba(255, 255, 255, 0.05)",
+                                border: "1px solid rgba(255, 255, 255, 0.1)",
+                                borderRadius: "20px",
+                                px: 3,
+                                py: 0.8,
                                 textTransform: "none",
-                                fontSize: "1rem",
+                                fontSize: "0.95rem",
                                 fontWeight: 600,
-                                "&:hover": { background: "rgba(255,255,255,0.05)" }
+                                backdropFilter: "blur(10px)",
+                                transition: "all 0.3s ease",
+                                "&:hover": { 
+                                    background: "rgba(255, 255, 255, 0.1)",
+                                    borderColor: "rgba(160, 196, 255, 0.5)",
+                                    boxShadow: "0 0 15px rgba(160, 196, 255, 0.2)",
+                                    transform: "translateX(-4px)" 
+                                }
                             }}
                         >
                             ← Back to Home

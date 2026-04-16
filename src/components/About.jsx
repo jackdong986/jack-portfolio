@@ -17,8 +17,8 @@ export default function About() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                <Card 
-                    sx={{ 
+                <Card
+                    sx={{
                         borderRadius: "24px",
                         background: "rgba(255, 255, 255, 0.03)",
                         backdropFilter: "blur(12px)",
@@ -45,11 +45,17 @@ export default function About() {
                         </Typography>
 
                         <Typography variant="body1" mb={4} fontSize="1.1rem" color="text.secondary">
-                            I specialize in both backend and frontend development using:
+                            I specialize in both backend and frontend development using technologies such as:
                             <br />
-                            <strong style={{ color: "#e6edf3" }}>Java, Kotlin, JavaScript, Python, HTML, ASPX, CSS</strong>.
-                            I also have a basic understanding of <strong style={{ color: "#e6edf3" }}>8086 Assembly</strong> and <strong style={{ color: "#e6edf3" }}>C++</strong>,
-                            and experience with Adobe Photoshop & Premiere Pro for media and design tasks.
+                            <strong style={{ color: "#e6edf3" }}>Java, JavaScript, Python, HTML, CSS, and modern frameworks like React with Vite.</strong>.
+                            I also have hands-on experience with containerization and deployment tools such as <strong style={{ color: "#e6edf3" }}>Docker and Kubernetes</strong>,
+                            along with practical exposure to AI platforms, model fine-tuning, and cloud-based AI infrastructure during my internship.
+                        </Typography>
+
+                        <Typography variant="body1" mb={4} fontSize="1.1rem" color="text.secondary">
+                            In addition, I have working knowledge of <strong style={{ color: "#e6edf3" }}>Adobe Photoshop and Premiere Pro</strong>,
+                            enabling me to handle basic media and design tasks when needed.
+                            I am continuously learning and improving my skills to stay aligned with the latest technologies and industry practices, particularly in AI and DevOps.
                         </Typography>
 
                         <Box sx={{

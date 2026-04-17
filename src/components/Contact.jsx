@@ -4,7 +4,7 @@ import QRCode from "react-qr-code";
 import resume from "../assets/CV Resume.pdf"
 
 export default function Contact() {
-    const resumeUrl = resume; 
+    const resumeUrl = resume;
     const github = "https://github.com/jackdong986";
 
     return (
@@ -25,9 +25,9 @@ export default function Contact() {
                     Contact & Resume
                 </Typography>
 
-                <Card 
-                    sx={{ 
-                        p: 3, 
+                <Card
+                    sx={{
+                        p: 3,
                         borderRadius: "16px",
                         background: "rgba(255, 255, 255, 0.03)",
                         backdropFilter: "blur(10px)",
@@ -52,8 +52,8 @@ export default function Contact() {
 
                         <Stack direction="row" justifyContent="center" mb={4}>
                             <Box sx={{
-                                p: 2, 
-                                background: "#fff", 
+                                p: 2,
+                                background: "#fff",
                                 borderRadius: "12px",
                                 boxShadow: "0 0 20px rgba(79, 139, 255, 0.2)",
                                 transition: "transform 0.3s ease",

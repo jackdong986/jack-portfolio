@@ -126,9 +126,9 @@ npm run preview
 ## **About the Developer**
 
 **Name:** Jack Dong
-**Role:** Full-Stack Developer
-**Email:** [weijie.dong@flexinfra.com.my](mailto:weijie.dong@flexinfra.com.my)
-**Learning:** AI Stack
+**Role:** AI Engineering
+**Email:** [jackdong986@gmail.com](mailto:jackdong986@gmail.com)
+**Learning:** LLM 
 **Location:** Malaysia 🇲🇾
 
 ---

@@ -140,7 +140,7 @@ export default function Hero() {
             {[
               ["AI", "Primary focus"],
               ["SE", "Bachelor degree"],
-              ["5", "Featured projects"],
+              ["7", "Featured projects"],
               ["MY", "Malaysia based"],
             ].map(([value, label]) => (
               <Box

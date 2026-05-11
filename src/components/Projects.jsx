@@ -1,10 +1,12 @@
 import { Box, Card, CardContent, CardMedia, Chip, Container, Grid, Stack, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import flowerImg from "../assets/bloom & co..png";
+import bacs2063Img from "../assets/bacs2063-data-structure-algorithm.png";
 import chefImg from "../assets/chef.png";
 import dashboardImg from "../assets/dashboard.png";
 import llamaflexinfraImg from "../assets/llama-flexinfra.png";
 import moviedramaImg from "../assets/movie_drama.png";
+import tenantTroveImg from "../assets/tenant-trove.png";
 
 const MotionDiv = motion.div;
 
@@ -27,6 +29,20 @@ const projects = [
     desc: "Final year project using fine-tuned MiniLM and GPT-2 workflows for recipe search, generation, and menu planning.",
     img: chefImg,
     tags: ["FYP", "GenAI", "Flask"],
+  },
+  {
+    title: "TenantTrove",
+    desc: "Android property renting platform built with Kotlin and XML, supporting property browsing, rental flows, host listing management, profiles, payment history, feedback, and dashboard statistics.",
+    img: tenantTroveImg,
+    imageFit: "contain",
+    tags: ["Android", "Kotlin", "Property rental"],
+  },
+  {
+    title: "BACS2063 Programme Management",
+    desc: "University programme, tutorial group, and tutor management system for managing academic programme operations.",
+    img: bacs2063Img,
+    imageFit: "contain",
+    tags: ["Data Structures", "Management system", "University"],
   },
   {
     title: "Bloom & Co.",
@@ -81,7 +97,7 @@ export default function Projects() {
             </Box>
             <Typography color="text.secondary" sx={{ maxWidth: 440, lineHeight: 1.75 }}>
               AI and software projects shaped by my resume: final year AI work,
-              chatbot exploration, dashboards, and deployable web applications.
+              mobile applications, management systems, dashboards, and deployable web applications.
             </Typography>
           </Stack>
         </MotionDiv>
@@ -120,7 +136,8 @@ export default function Projects() {
                       width: "100%",
                       aspectRatio: "16 / 10",
                       height: "auto",
-                      objectFit: "cover",
+                      objectFit: project.imageFit ?? "cover",
+                      background: "rgba(248, 250, 252, 0.96)",
                       borderBottom: "1px solid rgba(148, 163, 184, 0.12)",
                     }}
                   />

@@ -1,123 +1,127 @@
-import { Box, Typography, List, ListItem, ListItemText, Card, CardContent, Button } from "@mui/material";
+import { Box, Button, Card, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
+const MotionDiv = motion.div;
+
+const paragraphSx = {
+  color: "text.secondary",
+  fontSize: "1.05rem",
+  lineHeight: 1.9,
+};
+
+const facts = [
+  ["Location", "Malaysia"],
+  ["Education", "Bachelor of Software Engineering"],
+  ["Career focus", "AI Engineer, then Software Developer"],
+  ["Email", "jackdong986@gmail.com"],
+];
+
 export default function About() {
-    const navigate = useNavigate();
-    return (
-        <Box
-            sx={{
-                padding: "40px",
-                paddingTop: "80px",
-                maxWidth: "900px",
-                margin: "auto",
-                lineHeight: 1.7,
-            }}
+  const navigate = useNavigate();
+
+  return (
+    <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
+      <MotionDiv
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <Card
+          sx={{
+            borderRadius: 4,
+            background: "rgba(15, 23, 42, 0.76)",
+            border: "1px solid rgba(148, 163, 184, 0.16)",
+            boxShadow: "0 28px 80px rgba(2, 6, 23, 0.34)",
+          }}
         >
-            <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+          <CardContent sx={{ p: { xs: 2.5, md: 5 } }}>
+            <Button
+              onClick={() => navigate("/")}
+              variant="outlined"
+              sx={{
+                mb: 4,
+                color: "text.primary",
+                borderColor: "rgba(148, 163, 184, 0.3)",
+              }}
             >
-                <Card
-                    sx={{
-                        borderRadius: "24px",
-                        background: "rgba(255, 255, 255, 0.03)",
-                        backdropFilter: "blur(12px)",
-                        border: "1px solid rgba(255, 255, 255, 0.1)",
-                        boxShadow: "0 10px 40px rgba(0, 0, 0, 0.2)",
-                        p: { xs: 2, md: 4 }
-                    }}
+              Back to Home
+            </Button>
+
+            <Grid container spacing={5}>
+              <Grid size={{ xs: 12, md: 7 }}>
+                <Typography variant="overline" color="secondary.main" fontWeight={800}>
+                  About Jack
+                </Typography>
+                <Typography variant="h2" fontWeight={800} sx={{ mb: 3, fontSize: { xs: "2.5rem", md: "4rem" } }}>
+                  I am a fresh software engineering graduate focused on AI.
+                </Typography>
+
+                <Stack spacing={2.5}>
+                  <Typography sx={paragraphSx}>
+                    I am Dong Wei Jie, a fresh Bachelor of Software Engineering graduate from
+                    Tunku Abdul Rahman University of Management and Technology.
+                  </Typography>
+                  <Typography sx={paragraphSx}>
+                    I completed my previous internship as an AI Engineer at Flexinfra, where I worked
+                    with AI-Stack platform testing, model fine-tuning, integration testing, and
+                    deployment support using Docker and Kubernetes.
+                  </Typography>
+                  <Typography sx={paragraphSx}>
+                    My strongest interests are Agentic AI, AI for compliance, chatbot systems,
+                    and Generative AI. AI engineering is my first career direction, supported by
+                    software developer skills in React, Vite, Flask, Python, Java, SQL, and cloud-ready tooling.
+                  </Typography>
+                </Stack>
+              </Grid>
+
+              <Grid size={{ xs: 12, md: 5 }}>
+                <Box
+                  sx={{
+                    display: "grid",
+                    gridTemplateColumns: { xs: "1fr", sm: "repeat(2, minmax(0, 1fr))", md: "1fr" },
+                    gap: 1.5,
+                  }}
                 >
-                    <CardContent>
-                        <Button 
-                            onClick={() => navigate("/")}
-                            sx={{ 
-                                mb: 3, 
-                                color: "#fff",
-                                background: "rgba(255, 255, 255, 0.05)",
-                                border: "1px solid rgba(255, 255, 255, 0.1)",
-                                borderRadius: "20px",
-                                px: 3,
-                                py: 0.8,
-                                textTransform: "none",
-                                fontSize: "0.95rem",
-                                fontWeight: 600,
-                                backdropFilter: "blur(10px)",
-                                transition: "all 0.3s ease",
-                                "&:hover": { 
-                                    background: "rgba(255, 255, 255, 0.1)",
-                                    borderColor: "rgba(160, 196, 255, 0.5)",
-                                    boxShadow: "0 0 15px rgba(160, 196, 255, 0.2)",
-                                    transform: "translateX(-4px)" 
-                                }
-                            }}
-                        >
-                            ← Back to Home
-                        </Button>
+                  {facts.map(([label, value]) => (
+                    <Box
+                      key={label}
+                      sx={{
+                        p: 2,
+                        borderRadius: 3,
+                        background: "rgba(8, 17, 31, 0.5)",
+                        border: "1px solid rgba(148, 163, 184, 0.14)",
+                      }}
+                    >
+                      <Typography variant="caption" color="text.secondary">
+                        {label}
+                      </Typography>
+                      <Typography fontWeight={800}>{value}</Typography>
+                    </Box>
+                  ))}
+                </Box>
 
-                        <Typography variant="h3" fontWeight={700} mb={4} textAlign="center"
-                            sx={{
-                                background: "linear-gradient(90deg, #fff, #a0c4ff)",
-                                WebkitBackgroundClip: "text",
-                                WebkitTextFillColor: "transparent"
-                            }}
-                        >
-                            About Me
-                        </Typography>
-
-                        <Typography variant="body1" mb={3} fontSize="1.1rem" color="text.primary">
-                            I’m <strong style={{ color: "#4f8bff" }}>Dong Wei Jie</strong>, a passionate software engineer from Malaysia,
-                            focused on building dynamic and user-friendly web solutions with clean UI
-                            and seamless functionality.
-                        </Typography>
-
-                        <Typography variant="body1" mb={4} fontSize="1.1rem" color="text.secondary">
-                            I specialize in both backend and frontend development using technologies such as:
-                            <br />
-                            <strong style={{ color: "#e6edf3" }}>Java, JavaScript, Python, HTML, CSS, and modern frameworks like React with Vite.</strong>.
-                            I also have hands-on experience with containerization and deployment tools such as <strong style={{ color: "#e6edf3" }}>Docker and Kubernetes</strong>,
-                            along with practical exposure to AI platforms, model fine-tuning, and cloud-based AI infrastructure during my internship.
-                        </Typography>
-
-                        <Typography variant="body1" mb={4} fontSize="1.1rem" color="text.secondary">
-                            In addition, I have working knowledge of <strong style={{ color: "#e6edf3" }}>Adobe Photoshop and Premiere Pro</strong>,
-                            enabling me to handle basic media and design tasks when needed.
-                            I am continuously learning and improving my skills to stay aligned with the latest technologies and industry practices, particularly in AI and DevOps.
-                        </Typography>
-
-                        <Box sx={{
-                            background: "rgba(0,0,0,0.2)",
-                            borderRadius: "16px",
-                            p: 3,
-                            border: "1px solid rgba(255,255,255,0.05)"
-                        }}>
-                            <Typography variant="h5" fontWeight={600} mb={2} color="#4f8bff">
-                                Quick Facts
-                            </Typography>
-
-                            <List>
-                                <ListItem sx={{ py: 0.5 }}>
-                                    <ListItemText primaryTypographyProps={{ fontSize: "1.1rem" }} primary="🌍 Based in Malaysia 🇲🇾" />
-                                </ListItem>
-
-                                <ListItem sx={{ py: 0.5 }}>
-                                    <ListItemText primaryTypographyProps={{ fontSize: "1.1rem" }} primary="✉️ Email: jackdong986@gmail.com" />
-                                </ListItem>
-
-                                <ListItem sx={{ py: 0.5 }}>
-                                    <ListItemText primaryTypographyProps={{ fontSize: "1.1rem" }} primary="🧠 Currently learning AI Stack" />
-                                </ListItem>
-
-                                <ListItem sx={{ py: 0.5 }}>
-                                    <ListItemText primaryTypographyProps={{ fontSize: "1.1rem" }} primary="☕ Always coding with coffee (even when sleepy)" />
-                                </ListItem>
-                            </List>
-                        </Box>
-
-                    </CardContent>
-                </Card>
-            </motion.div>
-        </Box>
-    );
+                <Box
+                  sx={{
+                    mt: 2,
+                    p: 2.5,
+                    borderRadius: 3,
+                    background: "linear-gradient(145deg, rgba(91, 140, 255, 0.16), rgba(45, 212, 191, 0.12))",
+                    border: "1px solid rgba(91, 140, 255, 0.2)",
+                  }}
+                >
+                  <Typography variant="h6" fontWeight={800} mb={1}>
+                    Current direction
+                  </Typography>
+                  <Typography color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                    Building toward AI Engineer roles while keeping strong full-stack software development skills.
+                  </Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </CardContent>
+        </Card>
+      </MotionDiv>
+    </Container>
+  );
 }

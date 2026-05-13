@@ -6,6 +6,7 @@ import chefImg from "../assets/chef.png";
 import dashboardImg from "../assets/dashboard.png";
 import llamaflexinfraImg from "../assets/llama-flexinfra.png";
 import moviedramaImg from "../assets/movie_drama.png";
+import soulvenirImg from "../assets/soulvenir.png";
 import tenantTroveImg from "../assets/tenant-trove.png";
 
 const MotionDiv = motion.div;
@@ -36,6 +37,13 @@ const projects = [
     img: tenantTroveImg,
     imageFit: "contain",
     tags: ["Android", "Kotlin", "Property rental"],
+  },
+  {
+    title: "Soulvenir",
+    desc: "QR-first travel memory app where users create memories, generate printable QR stickers, scan them later, and open an immersive destination-focused globe page.",
+    img: soulvenirImg,
+    imageFit: "contain",
+    tags: ["Travel app", "QR memory", "Globe UI"],
   },
   {
     title: "BACS2063 Programme Management",
@@ -97,7 +105,7 @@ export default function Projects() {
             </Box>
             <Typography color="text.secondary" sx={{ maxWidth: 440, lineHeight: 1.75 }}>
               AI and software projects shaped by my resume: final year AI work,
-              mobile applications, management systems, dashboards, and deployable web applications.
+              mobile applications, travel memory products, management systems, dashboards, and deployable web applications.
             </Typography>
           </Stack>
         </MotionDiv>

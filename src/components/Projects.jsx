@@ -54,9 +54,9 @@ const projects = [
   },
   {
     title: "Bloom & Co.",
-    desc: "A flower shop website with product presentation and storefront structure.",
+    desc: "A modern flower shop web application built with React + Vite, Material UI, and Firebase for authentication, product management, and real-time database features.",
     img: flowerImg,
-    tags: ["Ecommerce", "UI"],
+    tags: ["React + Vite", "Material UI", "Firebase"],
   },
   {
     title: "Movie Drama",
@@ -66,9 +66,9 @@ const projects = [
   },
   {
     title: "My Dashboard",
-    desc: "A personal dashboard designed for quick access to useful daily information.",
+    desc: "A personal productivity dashboard with tasks, timetable, events, weather, news, AI chat, and Gmail integration.",
     img: dashboardImg,
-    tags: ["Dashboard", "Productivity"],
+    tags: ["Productivity", "AI chat", "Gmail"],
   },
   {
     title: "Llama-FlexInfra",
